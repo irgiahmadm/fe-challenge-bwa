@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Resto</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="d-flex justify-content-between align-items-center w-100 p-5">
+        <ul class="d-flex align-items-center unordered-list-menu">
+            <li><a href="" class="active">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    
+                    <div class="category-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.16488 0.726266C7.45488 0.426266 7.92488 0.426266 8.22488 0.716266C8.37488 0.866266 8.44488 1.05627 8.44488 1.25627C8.44488 1.44627 8.37488 1.63627 8.22488 1.77627L4.75488 5.26627C4.61488 5.40627 4.42488 5.48627 4.22488 5.48627C4.02488 5.48627 3.83488 5.40627 3.69488 5.26627L0.224878 1.77627C-0.0751221 1.48627 -0.0751221 1.01627 0.224878 0.716266C0.514878 0.426266 0.994878 0.426266 1.28488 0.726266L4.22488 3.67627L7.16488 0.726266Z" fill="#232631"/>
+                    </svg>
+                    </div>
+                        
+                    <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">Category 1</a></li>
+                    <li><a class="dropdown-item" href="#">Category 2</a></li>
+                    <li><a class="dropdown-item" href="#">Category 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+        <a class="brand-logo d-flex align-items-center" href="#">
+            <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2326 27.4289V23.0972C10.2326 21.9914 11.1356 21.095 12.2494 21.095H16.3212C16.8561 21.095 17.3691 21.3059 17.7473 21.6814C18.1256 22.0569 18.338 22.5662 18.338 23.0972V27.4289C18.3347 27.8887 18.5163 28.3307 18.8425 28.657C19.1688 28.9832 19.6127 29.1667 20.0758 29.1667H22.8538C24.1511 29.17 25.3966 28.6607 26.3152 27.7512C27.2337 26.8416 27.75 25.6066 27.75 24.3186V11.9781C27.75 10.9377 27.2854 9.95082 26.4815 9.28332L17.0315 1.79086C15.3877 0.47717 13.0324 0.519585 11.4376 1.89159L2.20327 9.28332C1.36138 9.93114 0.858198 10.9209 0.833332 11.9781V24.306C0.833332 26.9905 3.02546 29.1667 5.72958 29.1667H8.44408C9.4059 29.1667 10.1876 28.3963 10.1945 27.4415L10.2326 27.4289Z" fill="#5A4FCF"/>
+            </svg>
+            <span class="brand-text">Resto</span>
+        </a>
+        <div class="cta-nav d-flex justify-conten-between align-items-center" >
+            <div class="cta-search d-flex align-items-center">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_19_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H19.4768V19.477H0V0Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_19_18)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7388 1.5C5.1958 1.5 1.4998 5.195 1.4998 9.738C1.4998 14.281 5.1958 17.977 9.7388 17.977C14.2808 17.977 17.9768 14.281 17.9768 9.738C17.9768 5.195 14.2808 1.5 9.7388 1.5M9.7388 19.477C4.3688 19.477 -0.000198364 15.108 -0.000198364 9.738C-0.000198364 4.368 4.3688 0 9.7388 0C15.1088 0 19.4768 4.368 19.4768 9.738C19.4768 15.108 15.1088 19.477 9.7388 19.477" fill="#858585"/>
+                    </g>
+                    <mask id="mask1_19_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="15" width="6" height="6">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.24 15.7069H20.264V20.7217H15.24V15.7069Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1_19_18)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5142 20.7217C19.3232 20.7217 19.1312 20.6487 18.9842 20.5027L15.4602 16.9887C15.1672 16.6957 15.1662 16.2207 15.4592 15.9277C15.7512 15.6327 16.2262 15.6347 16.5202 15.9257L20.0442 19.4407C20.3372 19.7337 20.3382 20.2077 20.0452 20.5007C19.8992 20.6487 19.7062 20.7217 19.5142 20.7217" fill="#858585"/>
+                    </g>
+                    </svg>                    
+                <input type="text" class="input-search" placeholder="Search your favorite food">
+            </div>
+            <a href="" class="custom-btn-secondary">Login</a>
+        </div>
+    </nav>
+    <!-- End of navigation -->
+
+    <!-- Carousel section -->
+    <section id="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-desc">
+                <svg width="120" height="25" viewBox="0 0 120 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5734 4.89058C11.0224 3.50861 12.9776 3.50861 13.4266 4.89058L14.3574 7.75532C14.5582 8.37336 15.1341 8.7918 15.784 8.7918H18.7962C20.2492 8.7918 20.8534 10.6512 19.6778 11.5053L17.2409 13.2758C16.7152 13.6578 16.4952 14.3348 16.696 14.9529L17.6268 17.8176C18.0759 19.1996 16.4941 20.3488 15.3186 19.4947L12.8817 17.7242C12.3559 17.3422 11.6441 17.3422 11.1183 17.7242L8.68143 19.4947C7.50586 20.3488 5.92413 19.1996 6.37316 17.8176L7.30397 14.9529C7.50479 14.3348 7.2848 13.6578 6.75907 13.2758L4.32217 11.5053C3.1466 10.6512 3.75076 8.7918 5.20385 8.7918H8.21602C8.86586 8.7918 9.44179 8.37336 9.6426 7.75532L10.5734 4.89058Z" fill="#FFB800"/>
+                    <path d="M34.5734 4.89058C35.0224 3.50861 36.9776 3.50861 37.4266 4.89058L38.3574 7.75532C38.5582 8.37336 39.1341 8.7918 39.784 8.7918H42.7962C44.2492 8.7918 44.8534 10.6512 43.6778 11.5053L41.2409 13.2758C40.7152 13.6578 40.4952 14.3348 40.696 14.9529L41.6268 17.8176C42.0759 19.1996 40.4941 20.3488 39.3186 19.4947L36.8817 17.7242C36.3559 17.3422 35.6441 17.3422 35.1183 17.7242L32.6814 19.4947C31.5059 20.3488 29.9241 19.1996 30.3732 17.8176L31.304 14.9529C31.5048 14.3348 31.2848 13.6578 30.7591 13.2758L28.3222 11.5053C27.1466 10.6512 27.7508 8.7918 29.2038 8.7918H32.216C32.8659 8.7918 33.4418 8.37336 33.6426 7.75532L34.5734 4.89058Z" fill="#FFB800"/>
+                    <path d="M58.5734 4.89058C59.0224 3.50861 60.9776 3.50861 61.4266 4.89058L62.3574 7.75532C62.5582 8.37336 63.1341 8.7918 63.784 8.7918H66.7962C68.2492 8.7918 68.8534 10.6512 67.6778 11.5053L65.2409 13.2758C64.7152 13.6578 64.4952 14.3348 64.696 14.9529L65.6268 17.8176C66.0759 19.1996 64.4941 20.3488 63.3186 19.4947L60.8817 17.7242C60.3559 17.3422 59.6441 17.3422 59.1183 17.7242L56.6814 19.4947C55.5059 20.3488 53.9241 19.1996 54.3732 17.8176L55.304 14.9529C55.5048 14.3348 55.2848 13.6578 54.7591 13.2758L52.3222 11.5053C51.1466 10.6512 51.7508 8.7918 53.2038 8.7918H56.216C56.8659 8.7918 57.4418 8.37336 57.6426 7.75532L58.5734 4.89058Z" fill="#FFB800"/>
+                    <path d="M82.5734 4.89058C83.0224 3.50861 84.9776 3.50861 85.4266 4.89058L86.3574 7.75532C86.5582 8.37336 87.1341 8.7918 87.784 8.7918H90.7962C92.2492 8.7918 92.8534 10.6512 91.6778 11.5053L89.2409 13.2758C88.7152 13.6578 88.4952 14.3348 88.696 14.9529L89.6268 17.8176C90.0759 19.1996 88.4941 20.3488 87.3186 19.4947L84.8817 17.7242C84.3559 17.3422 83.6441 17.3422 83.1183 17.7242L80.6814 19.4947C79.5059 20.3488 77.9241 19.1996 78.3732 17.8176L79.304 14.9529C79.5048 14.3348 79.2848 13.6578 78.7591 13.2758L76.3222 11.5053C75.1466 10.6512 75.7508 8.7918 77.2038 8.7918H80.216C80.8659 8.7918 81.4418 8.37336 81.6426 7.75532L82.5734 4.89058Z" fill="#FFB800"/>
+                    <path d="M106.573 4.89058C107.022 3.50861 108.978 3.50861 109.427 4.89058L110.357 7.75532C110.558 8.37336 111.134 8.7918 111.784 8.7918H114.796C116.249 8.7918 116.853 10.6512 115.678 11.5053L113.241 13.2758C112.715 13.6578 112.495 14.3348 112.696 14.9529L113.627 17.8176C114.076 19.1996 112.494 20.3488 111.319 19.4947L108.882 17.7242C108.356 17.3422 107.644 17.3422 107.118 17.7242L104.681 19.4947C103.506 20.3488 101.924 19.1996 102.373 17.8176L103.304 14.9529C103.505 14.3348 103.285 13.6578 102.759 13.2758L100.322 11.5053C99.1466 10.6512 99.7508 8.7918 101.204 8.7918H104.216C104.866 8.7918 105.442 8.37336 105.643 7.75532L106.573 4.89058Z" fill="#FFB800"/>
+                </svg>
+                <span id="carousel-rating-value" class="rating-value">5.0</span>
+                <span id="carousel-rating-count" class="rating-count">6.6K+</span>
+                <div class="carousel-restaurant-name"><b><span id="carousel-restaurant-name-text">Daza Fracture Restaurant</span></b></div>
+                <div class="carousel-restaurant-price"><span id="carousel-restaurant-price-text">IDR 29.000 - IDR 560.000</span></div>
+                <div class="carousel-restaurant-place">
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                    </svg>
+                    <span id="carousel-restaurant-place-text">Jakarta, Indonesia</span>
+                </div>
+                <div class="button-view-all d-flex align-items-center py-5">
+                    <button type="button" class="custom-btn-viewall">
+                        Make Reservation
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                            </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="custom-carousel-item">
+                <img src="assets/img/carousel-1.png" alt="" onclick="currentSlide(1)">
+            </div>
+            <div class="custom-carousel-item">
+                <img src="assets/img/carousel-2.png" alt="" onclick="currentSlide(2)">
+            </div>
+            <div class="custom-carousel-item">
+                <img src="assets/img/carousel-3.png" alt="" onclick="currentSlide(3)">
+            </div>
+        </div>
+    </section>
+    <!-- End of carousel section -->
+
+    <!-- Benefit section -->
+    <section id="benefit-section" class="text-center p-5">
+        <span class="title-sm-section">SPECIAL BENEFIT FOR YOU</span>
+        <h3 class="title-lg-section">Why Should Choose Us?</h3>
+        <div class="card-benefit-container py-5 d-flex justify-content-evenly">
+            <div class="card-item w-25">
+                <img src="assets/img/benefit-disc.png" alt="" width="80" height="80">
+                <div class="card-title mt-4 font-weight-bold">Extra Discounts</div>
+                <div class="card-desc px-4">
+                    Get your special discount by using <br/>our reservation
+                </div>
+                <button type="button" class="custom-btn-primary btn-rounded-lg w-100">
+                    View Details 
+                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="card-item w-25">
+                <img src="assets/img/benefit-eat.png" alt="" width="80" height="80">
+                <div class="card-title mt-4 font-weight-bold">Come and Eat</div>
+                <div class="card-desc px-4">
+                    Get your own table quickly & without waiting <br/>in line
+                </div>
+                <button type="button" class="custom-btn-primary btn-rounded-lg w-100">
+                    View Details 
+                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="card-item w-25">
+                <img src="assets/img/benefit-fee.png" alt="" width="80" height="80">
+                <div class="card-title mt-4 font-weight-bold">No Extra Fee</div>
+                <div class="card-desc px-4">
+                    Get tax free if you want to order food and make a reservation
+                </div>
+                <button type="button" class="custom-btn-primary btn-rounded-lg w-100">
+                    View Details 
+                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="card-item w-25">
+                <img src="assets/img/benefit-clean.png" alt="" width="80" height="80">
+                <div class="card-title mt-4 font-weight-bold">Guaranteed Cleanliness</div>
+                <div class="card-desc">
+                    We ensure the cleanliness of the place as well as<br/> the food
+                </div>
+                <button type="button" class="custom-btn-primary btn-rounded-lg w-100">
+                    View Details 
+                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End of benefit section -->
+
+    <!-- popular section -->
+    <section id="popular-section" class="p-5">
+        <div class="container-popular-section d-flex justify-content-between align-items-center">
+            <div class="content-popular-text">
+                <span class="title-sm-section">TOP 3 FEATURED RESTAURANT</span>
+                <h3 class="title-lg-section">Most Popular Restaurants</h3>
+                <p class="py-4 popular-restaurant-desc">
+                    The best restaurant in our opinion is how much customers like it in terms of place, price, comfort and of course the taste of the food itself.
+                </p>
+                <div class="button-view-all d-flex align-items-center py-5">
+                    <button type="button" class="custom-btn-viewall">
+                        View All Restaurant
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                            </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-popular-restaurant d-flex align-items-center">
+                <div class="card-popular-item-restaurant">
+                    <div class="card-content-restaurant">
+                        <div class="card-popular-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                            <div class="card-desc-text">
+                                <span class="rating-value">5.0</span>
+                                <span class="rating-count">6.6K+</span>
+                                <div><b>Batavia Restaurant</b></div>
+                                <div>IDR 29.000 - IDR 259.999</div>
+                            </div>
+                            <div>
+                                <button type="button" class="custom-btn-location">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                    </svg>
+                                </button>
+                            </div>    
+                        </div>
+                        <img src="assets/img/near-you-1.png" alt="">
+                    </div>
+                </div>
+                <div class="card-popular-item-restaurant">
+                    <div class="card-content-restaurant">
+                        <div class="card-popular-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                            <div class="card-desc-text">
+                                <span class="rating-value">5.0</span>
+                                <span class="rating-count">5.6K+</span>
+                                <div><b>Huhiha Restaurant</b></div>
+                                <div>IDR 45.000 - IDR 120.500</div>
+                            </div>
+                            <div>
+                                <button type="button" class="custom-btn-location">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <img src="assets/img/popular-resto-2.png" alt="">
+                    </div>
+                </div>
+                <div class="card-popular-item-restaurant">
+                    <div class="card-content-restaurant">
+                        <div class="card-popular-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                            <div class="card-desc-text">
+                                <span class="rating-value">5.0</span>
+                                <span class="rating-count">4.9K+</span>
+                                <div><b>Batavia Restaurant</b></div>
+                                <div>IDR 30.000 - IDR 129.999</div>
+                            </div>
+                            <div>
+                                <button type="button" class="custom-btn-location">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <img src="assets/img/popular-resto-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of popular section -->
+
+    <!-- Near Resto Section -->
+    <section id="near-section" class="p-5">
+        <div class="near-section-header d-flex justify-content-between align-items-center">
+            <div class="near-header-text">
+                <span class="title-sm-section">RESTAURANT BASED BY CITY</span>
+                <h3 class="title-lg-section">Restaurant Near You</h3>
+            </div>
+            <div class="select-near-location">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                </svg>
+                <select name="" id="">
+                    <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
+                    <option value="Bandung, Indonesia">Bandung, Indonesia</option>
+                    <option value="Solo, Indonesia">Solo, Indonesia</option>
+                    <option value="Yogya, Indonesia">Yogya, Indonesia</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="card-item-restaurant">
+                <div class="card-content-restaurant">
+                    <div class="card-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                        <div class="card-desc-text">
+                            <span class="rating-value">5.0</span>
+                            <span class="rating-count">6.6K+</span>
+                            <div><b>Batavia Restaurant</b></div>
+                            <div>IDR 29.000 - IDR 259.999</div>
+                        </div>
+                        <div>
+                            <button type="button" class="custom-btn-location">
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <img src="assets/img/near-you-1.png" alt="">
+                </div>
+            </div>
+            <div class="card-item-restaurant">
+                <div class="card-content-restaurant">
+                    <div class="card-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                        <div class="card-desc-text">
+                            <span class="rating-value">5.0</span>
+                            <span class="rating-count">3.6K+</span>
+                            <div><b>Split Ascent Restaurant</b></div>
+                            <div>IDR 49.000 - IDR 560.000</div>
+                        </div>
+                        <div>
+                            <button type="button" class="custom-btn-location">
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <img src="assets/img/near-you-2.png" alt="">
+                </div>
+            </div>
+            <div class="card-item-restaurant">
+                <div class="card-content-restaurant">
+                    <div class="card-restaurant-desc px-4 py-3 d-flex justify-content-between align-items-center">
+                        <div class="card-desc-text">
+                            <span class="rating-value">5.0</span>
+                            <span class="rating-count">11K+</span>
+                            <div><b>Daza Fracture Restaurant</b></div>
+                            <div>IDR 29.000 - IDR 560.000</div>
+                        </div>
+                        <div>
+                            <button type="button" class="custom-btn-location">
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.47144 4.45143C0.205203 4.48808 0 4.71968 0 4.99992C0 5.30564 0.244208 5.55347 0.545455 5.55347L10.1333 5.55347L6.66984 9.05423L6.6169 9.1162C6.45802 9.33257 6.47499 9.64013 6.66824 9.83706C6.88081 10.0537 7.22617 10.0544 7.43963 9.83868L11.8331 5.39842C11.8547 5.37729 11.8746 5.35437 11.8925 5.3299L11.8927 5.32969C12.0519 5.11265 12.0342 4.80406 11.8396 4.60737L7.4396 0.161287L7.3783 0.107824C7.16443 -0.0524988 6.86144 -0.0339699 6.66821 0.162973C6.45565 0.379612 6.4564 0.730097 6.66987 0.945805L10.1342 4.44637L0.545455 4.44637L0.47144 4.45143Z" fill="#130F26"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <img src="assets/img/near-you-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="button-view-all d-flex justify-content-center align-items-center my-5">
+            <button type="button" class="custom-btn-viewall">
+                View All Restaurant
+                <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.226266 1.33506C-0.0737344 1.04506 -0.0737345 0.575061 0.216266 0.275061C0.366266 0.125061 0.556266 0.0550613 0.756266 0.0550613C0.946266 0.0550613 1.13627 0.125061 1.27627 0.275061L4.76627 3.74506C4.90627 3.88506 4.98627 4.07506 4.98627 4.27506C4.98627 4.47506 4.90627 4.66506 4.76627 4.80506L1.27627 8.27506C0.986266 8.57506 0.516266 8.57506 0.216266 8.27506C-0.0737341 7.98506 -0.0737342 7.50506 0.226266 7.21506L3.17627 4.27506L0.226266 1.33506Z" fill="#232631"/>
+                    </svg>
+            </button>
+        </div>
+    </section>
+    <!-- End of near Resto Section -->
+
+    <!-- Top 4 Chef Section-->
+    <section id="top-chef-section">
+        <div class="container-chef-section d-flex justify-content-around">
+
+            <img src="assets/img/chef-image.png" alt="" id="img-top-chef">
+
+            <div class="content-chef-text">
+                <span class="title-sm-section">TOP 4 EXPERT CHEFS</span>
+                <h3 class="title-lg-section">Expert Chefs in Fuddy</h3>
+                <div class="chef-list" id="chef-list-tab">
+                    <div class="chef-list-item p-4 chef-item-active">                    
+                        <div class="chef-list-item-text">
+                            <div class="chef-meal">
+                                PIZZA
+                            </div>
+                            <div class="chef-name">
+                                Phoenix Satcheup
+                            </div>
+                            <div class="chef-location">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                                </svg>
+                                Jakarta, Indonesia
+                            </div>
+                        </div>
+                        <div class="chef-list-item-cta chef-list-item-cta-show">
+                            Profile Details 
+                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.226266 1.335C-0.0737344 1.045 -0.0737345 0.575 0.216266 0.275C0.366266 0.125 0.556266 0.0550003 0.756266 0.0550003C0.946266 0.0550003 1.13627 0.125 1.27627 0.275L4.76627 3.745C4.90627 3.885 4.98627 4.075 4.98627 4.275C4.98627 4.475 4.90627 4.665 4.76627 4.805L1.27627 8.275C0.986266 8.575 0.516266 8.575 0.216266 8.275C-0.0737341 7.985 -0.0737342 7.505 0.226266 7.215L3.17627 4.275L0.226266 1.335Z" fill="#FDC886"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chef-list-item p-4">
+                        <div class="chef-list-item-text">
+                            <div class="chef-meal">
+                                VEGAN
+                            </div>
+                            <div class="chef-name">
+                                Chamber Botfrag
+                            </div>
+                            <div class="chef-location">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                                </svg>
+                                Jakarta, Indonesia
+                            </div>
+                        </div>
+                        <div class="chef-list-item-cta">
+                            Profile Details 
+                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.226266 1.335C-0.0737344 1.045 -0.0737345 0.575 0.216266 0.275C0.366266 0.125 0.556266 0.0550003 0.756266 0.0550003C0.946266 0.0550003 1.13627 0.125 1.27627 0.275L4.76627 3.745C4.90627 3.885 4.98627 4.075 4.98627 4.275C4.98627 4.475 4.90627 4.665 4.76627 4.805L1.27627 8.275C0.986266 8.575 0.516266 8.575 0.216266 8.275C-0.0737341 7.985 -0.0737342 7.505 0.226266 7.215L3.17627 4.275L0.226266 1.335Z" fill="#FDC886"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chef-list-item p-4">
+                        <div class="chef-list-item-text">
+                            <div class="chef-meal">
+                                ROAST CHICKEN
+                            </div>
+                            <div class="chef-name">
+                                Asep Vandal
+                            </div>
+                            <div class="chef-location">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                                </svg>
+                                Sunda, Indonesia
+                            </div>
+                        </div>
+                        <div class="chef-list-item-cta">
+                            Profile Details 
+                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.226266 1.335C-0.0737344 1.045 -0.0737345 0.575 0.216266 0.275C0.366266 0.125 0.556266 0.0550003 0.756266 0.0550003C0.946266 0.0550003 1.13627 0.125 1.27627 0.275L4.76627 3.745C4.90627 3.885 4.98627 4.075 4.98627 4.275C4.98627 4.475 4.90627 4.665 4.76627 4.805L1.27627 8.275C0.986266 8.575 0.516266 8.575 0.216266 8.275C-0.0737341 7.985 -0.0737342 7.505 0.226266 7.215L3.17627 4.275L0.226266 1.335Z" fill="#FDC886"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chef-list-item p-4">
+                        <div class="chef-list-item-text">
+                            <div class="chef-meal">
+                                BEEF STEAK
+                            </div>
+                            <div class="chef-name">
+                                I Made Invoker
+                            </div>
+                            <div class="chef-location">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 8.31776C0.5 3.71789 4.34388 0 8.99345 0C13.6561 0 17.5 3.71789 17.5 8.31776C17.5 10.6357 16.657 12.7876 15.2695 14.6116C13.7388 16.6235 11.8522 18.3765 9.72854 19.7524C9.24251 20.0704 8.80387 20.0944 8.27045 19.7524C6.13474 18.3765 4.24809 16.6235 2.7305 14.6116C1.34198 12.7876 0.5 10.6357 0.5 8.31776ZM6.19423 8.57675C6.19423 10.1177 7.45166 11.3297 8.99345 11.3297C10.5362 11.3297 11.8058 10.1177 11.8058 8.57675C11.8058 7.0478 10.5362 5.77683 8.99345 5.77683C7.45166 5.77683 6.19423 7.0478 6.19423 8.57675Z" fill="#656565"/>
+                                </svg>
+                                Bali, Indonesia
+                            </div>
+                        </div>
+                        <div class="chef-list-item-cta">
+                            Profile Details 
+                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.226266 1.335C-0.0737344 1.045 -0.0737345 0.575 0.216266 0.275C0.366266 0.125 0.556266 0.0550003 0.756266 0.0550003C0.946266 0.0550003 1.13627 0.125 1.27627 0.275L4.76627 3.745C4.90627 3.885 4.98627 4.075 4.98627 4.275C4.98627 4.475 4.90627 4.665 4.76627 4.805L1.27627 8.275C0.986266 8.575 0.516266 8.575 0.216266 8.275C-0.0737341 7.985 -0.0737342 7.505 0.226266 7.215L3.17627 4.275L0.226266 1.335Z" fill="#FDC886"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of top 4 Chef Section-->    
+</body>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/tab.js"></script>
+</html>
